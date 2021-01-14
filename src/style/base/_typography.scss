@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 
 h1 {
   font-weight: 700;
@@ -6,7 +6,7 @@ h1 {
 
 p,
 a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inconsolata', monospace;
   font-size: $default-font-size;
 }
 
@@ -25,9 +25,9 @@ a:hover {
 .section-title {
   margin: 0px;
   margin-bottom: 4.5rem;
-  font-size: $big-font-size;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 3.5rem;
+  // font-weight: bold;
+  text-transform: lowercase;
 
   @include respond(phone) {
     font-size: 2.8rem;
