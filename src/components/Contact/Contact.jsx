@@ -14,8 +14,15 @@ const Contact = () => {
         <Title title="Contact" />
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
-            <p className="contact-wrapper__text">
+            {/* <p className="contact-wrapper__text">
               {cta || 'Would you like to work with me? Awesome!'}
+            </p> */}
+            {/* <p>{cta || 'Would you like to work with me? Awesome!'}</p> */}
+            <p>
+              I’m currently looking for a full-time position as a software developer but I’m also
+              open to discussing freelance opportunities. <br />
+              <br />
+              Feel free to contact me using the form below :)
             </p>
             <a
               target="_blank"

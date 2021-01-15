@@ -37,7 +37,7 @@ const Projects = () => {
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={1000}
+                    delay={500}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
@@ -73,7 +73,7 @@ const Projects = () => {
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={500}
+                    delay={1000}
                     distance="30px"
                   >
                     <div className="project-wrapper__text">

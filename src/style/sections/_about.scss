@@ -4,9 +4,9 @@
   color: $white-color;
   height: 100%;
   border-top: 0px;
+  padding: 10rem 0;
   // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  padding-bottom: 15%;
 
   @include respond(tab-land) {
     height: 100%;
