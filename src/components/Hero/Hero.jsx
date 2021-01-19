@@ -47,9 +47,9 @@ const Header = () => {
               </div>
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
+          {/* <Col md={6} sm={12}>
             <img src={'../../images/profile.jpg'} alt="isometric cube" />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>

@@ -30,7 +30,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
+    title: 'cryptocurrency viewer',
     info: '',
     info2: '',
     url: '',

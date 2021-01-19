@@ -32,9 +32,9 @@ const Projects = () => {
 
             return (
               <Row key={id}>
-                <Col lg={6} sm={12}>
+                <Col lg={5} sm={12}>
                   <Fade
-                    left={isDesktop}
+                    up={isDesktop}
                     bottom={isMobile}
                     duration={1000}
                     delay={500}
@@ -68,7 +68,7 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={6} sm={12}>
+                <Col lg={7} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -88,20 +88,20 @@ const Projects = () => {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
+                        className="cta-btn cta-btn--resume"
                         href={url || '#!'}
                       >
-                        See Live
+                        <p className="cta-btn-text">live version</p>
                       </a>
 
                       {repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn cta-btn--repo"
                           href={repo}
                         >
-                          Source Code
+                          <p className="cta-btn-text">github repo</p>
                         </a>
                       )}
                     </div>

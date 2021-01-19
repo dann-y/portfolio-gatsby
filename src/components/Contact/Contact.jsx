@@ -24,14 +24,14 @@ const Contact = () => {
               <br />
               Feel free to contact me using the form below :)
             </p>
-            <a
+            {/* <a
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
               href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
             >
               {btn || "Let's Talk"}
-            </a>
+            </a> */}
           </div>
         </Fade>
       </Container>
