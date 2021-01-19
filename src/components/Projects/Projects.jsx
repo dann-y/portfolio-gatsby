@@ -32,7 +32,7 @@ const Projects = () => {
 
             return (
               <Row key={id}>
-                <Col lg={5} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     up={isDesktop}
                     bottom={isMobile}
@@ -68,7 +68,7 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={7} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}

@@ -26,6 +26,14 @@
     padding: 0rem $default-font-size;
   }
 
+  .hero-text-div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
   .hero-title {
     font-size: 3.5rem;
     font-weight: 400;
