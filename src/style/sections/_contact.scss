@@ -4,9 +4,8 @@
   // clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 10rem 0;
   // margin-top: -15rem;
-  margin-bottom: -1px;
+  // margin-bottom: -1px;
   color: $white-color;
-  align: left;
 
   @include respond(tab-land) {
     padding: 10rem 0;
@@ -33,5 +32,25 @@
         font-size: 2rem;
       }
     }
+  }
+
+  .form-container {
+    padding-top: 4rem;
+    text-align: left;
+    font-size: 1.3rem;
+
+    .input-field {
+      background-color: $white-color;
+      border: none;
+      font-size: 1.3rem;
+    }
+    //   label {
+    //     margin-right: 10px;
+    //   }
+
+    //   #message {
+    //     width: 200px;
+    //     height: 200px;
+    //   }
   }
 }
