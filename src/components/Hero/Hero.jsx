@@ -28,7 +28,7 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <Row>
-          <Col md={6} sm={12}>
+          <Col lg={6} sm={12}>
             <div className="hero-text-div">
               <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <h1 className="hero-title">
@@ -52,11 +52,11 @@ const Header = () => {
               </Fade>
             </div>
           </Col>
-          <Col md={6} sm={12}>
+          {/* <Col md={6} sm={12}>
             <Fade duration={3000} delay={1500} distance="30px">
               <img id="videoBG" src={cube} alt="isometric cube gif" />
             </Fade>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Col, Row, Form, Button } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
@@ -7,27 +7,6 @@ import Title from '../Title/Title';
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
   const { cta, btn, email } = contact;
-
-  // const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
-  // const handleChange = (e) => {
-  //   setFormState({
-  //     ...formState,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
-
-  // const handleSubmit = (e) => {
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: encode({ 'form-name': 'contact', ...formState }),
-  //   })
-  //     .then(() => alert('Success!'))
-  //     .catch((error) => alert(error));
-
-  //   e.preventDefault();
-  // };
 
   return (
     <section id="contact">
@@ -62,7 +41,6 @@ const Contact = () => {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          // onSubmit={handleSubmit}
           onSubmit="submit"
         >
           <input type="hidden" name="bot-field" />
@@ -70,101 +48,55 @@ const Contact = () => {
 
           <Row>
             <Col md={6}>
-              <Form.Group>
-                <Form.Label>name</Form.Label>
-                <Form.Control
-                  required
-                  className="input-field"
-                  id="name"
-                  type="text"
-                  name="name"
-                  // onChange={handleChange}
-                  // value={formState.name}
-                />
+              <Form.Group className="form-group">
+                <Fade duration={1000} delay={1000}>
+                  <Form.Label>name</Form.Label>
+                  <Form.Control
+                    required
+                    className="input-field"
+                    id="name"
+                    type="text"
+                    name="name"
+                  />
+                </Fade>
               </Form.Group>
             </Col>
             <Col md={6}>
-              <Form.Group>
-                <Form.Label>e-mail</Form.Label>
-                <Form.Control
-                  required
-                  className="input-field"
-                  id="email"
-                  type="email"
-                  name="email"
-                  // onChange={handleChange}
-                  // value={formState.email}
-                />
+              <Form.Group className="form-group">
+                <Fade duration={1000} delay={1500}>
+                  <Form.Label>e-mail</Form.Label>
+                  <Form.Control
+                    required
+                    className="input-field"
+                    id="email"
+                    type="email"
+                    name="email"
+                  />
+                </Fade>
               </Form.Group>
             </Col>
             <Col>
-              <Form.Group>
-                <Form.Label>message</Form.Label>
-                <Form.Control
-                  required
-                  className="input-field"
-                  as="textarea"
-                  id="message"
-                  name="message"
-                  // onChange={handleChange}
-                  // value={formState.message}
-                  rows="5"
-                />
+              <Form.Group className="form-group">
+                <Fade duration={1000} delay={2000}>
+                  <Form.Label>message</Form.Label>
+                  <Form.Control
+                    required
+                    className="input-field"
+                    as="textarea"
+                    id="message"
+                    name="message"
+                    rows="5"
+                  />
+                </Fade>
               </Form.Group>
-              <Button type="submit">submit</Button>
+              <Fade duration={1000} delay={2500}>
+                <Button className="cta-btn contact-btn" type="submit">
+                  submit
+                </Button>
+              </Fade>
             </Col>
           </Row>
         </Form>
-        {/* <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
-          >
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-
-            <div className="form-group">
-              <label htmlFor="name">name</label>
-              <input
-                id="name"
-                type="text"
-                name="name"
-                onChange={handleChange}
-                value={formState.name}
-                placeholder="enter your name"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email">email</label>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                onChange={handleChange}
-                value={formState.email}
-                placeholder="enter your email"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message">message</label>
-              <input
-                id="message"
-                type="message"
-                name="message"
-                onChange={handleChange}
-                value={formState.message}
-                placeholder="enter your message"
-              />
-            </div>
-
-            <button className="cta-btn " type="submit">
-              submit
-            </button>
-          </form> */}
       </Container>
     </section>
   );

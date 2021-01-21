@@ -8,7 +8,7 @@
   font-weight: 400;
   color: $dark-blue-text;
   padding: 0rem 5.6rem;
-  margin-top: -7.5rem;
+  // margin-top: -7.5rem;
   margin-bottom: 0;
   top: 0;
   left: 0;
@@ -18,12 +18,15 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
+  background-image: url('../images/isometriccube.gif');
+  background-repeat: no-repeat;
+  background-position: right 15% top 50%;
+  // background-size: cover;
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
+    background-size: 70%;
+    background-position: right 50% bottom 10%;
   }
 
   .hero-text-div {
@@ -32,6 +35,11 @@
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    @include respond(phone) {
+      -ms-transform: translateY(-95%);
+      transform: translateY(-95%);
+    }
   }
 
   .hero-title {
@@ -92,5 +100,8 @@
     //     font-size: 2rem;
     //   }
     // }
+  }
+  #videoBG {
+    z-index: -1;
   }
 }

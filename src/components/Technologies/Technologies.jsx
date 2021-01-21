@@ -33,7 +33,7 @@ const Technologies = () => {
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={2000}>
+              <Fade up={isDesktop} duration={1000} delay={1700}>
                 {' '}
                 <h3 className="list-label">front end</h3>
                 <p>
@@ -46,7 +46,7 @@ const Technologies = () => {
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={2500}>
+              <Fade up={isDesktop} duration={1000} delay={1800}>
                 {' '}
                 <h3 className="list-label">back end</h3>
                 <p>
@@ -57,7 +57,7 @@ const Technologies = () => {
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={3000}>
+              <Fade up={isDesktop} duration={1000} delay={1900}>
                 {' '}
                 <h3 className="list-label">design</h3>
                 <p>
@@ -68,7 +68,7 @@ const Technologies = () => {
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={3500}>
+              <Fade up={isDesktop} duration={1000} delay={2000}>
                 {' '}
                 <h3 className="list-label">others</h3>
                 <p>

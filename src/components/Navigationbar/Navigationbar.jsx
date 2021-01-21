@@ -31,12 +31,12 @@ const Navigationbar = () => {
               <div>about</div>
             </Link>
           </Nav.Link>
-          <Nav.Link style={{ margin: '0 2rem', color: 'white' }} href="#link">
+          <Nav.Link style={{ margin: '0 2rem', color: 'white' }}>
             <Link to="projects" smooth duration={1100}>
               <div>projects</div>
             </Link>
           </Nav.Link>
-          <Nav.Link style={{ margin: '0 2rem', color: 'white' }} href="#link">
+          <Nav.Link style={{ margin: '0 2rem', color: 'white' }}>
             <Link to="contact" smooth duration={1100}>
               <div>contact</div>
             </Link>

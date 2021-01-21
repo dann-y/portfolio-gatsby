@@ -36,21 +36,25 @@
 
   .form-container {
     padding-top: 4rem;
-    text-align: left;
+    text-align: center;
     font-size: 1.3rem;
 
     .input-field {
-      background-color: $white-color;
+      background-color: $secondary-color;
+      color: $white-color;
       border: none;
       font-size: 1.3rem;
     }
-    //   label {
-    //     margin-right: 10px;
-    //   }
 
-    //   #message {
-    //     width: 200px;
-    //     height: 200px;
-    //   }
+    .form-group {
+      margin-bottom: 3rem;
+      @include respond(phone) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .contact-btn {
+    font-size: 1.3rem;
   }
 }
