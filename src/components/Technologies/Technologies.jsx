@@ -28,12 +28,12 @@ const Technologies = () => {
         <Container>
           <Row className="about-wrapper">
             <Col lg={4} md={12} sm={12} xs={12}>
-              <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
+              <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
                 <Title title="technologies i've worked with" />
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={1700}>
+              <Fade up={isDesktop} duration={1000} delay={1200}>
                 {' '}
                 <h3 className="list-label">front end</h3>
                 <p>
@@ -46,7 +46,7 @@ const Technologies = () => {
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={1800}>
+              <Fade up={isDesktop} duration={1000} delay={1300}>
                 {' '}
                 <h3 className="list-label">back end</h3>
                 <p>
@@ -57,7 +57,7 @@ const Technologies = () => {
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={1900}>
+              <Fade up={isDesktop} duration={1000} delay={1400}>
                 {' '}
                 <h3 className="list-label">design</h3>
                 <p>
@@ -68,7 +68,7 @@ const Technologies = () => {
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={2000}>
+              <Fade up={isDesktop} duration={1000} delay={1500}>
                 {' '}
                 <h3 className="list-label">others</h3>
                 <p>
