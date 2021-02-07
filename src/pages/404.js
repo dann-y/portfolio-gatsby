@@ -23,18 +23,20 @@ export default () => {
         <Container>
           <Fade bottom duration={1000} delay={500} distance="30px">
             <h1 className="hero-title text-center">
-              Sorry, this path does not exist{' '}
+              sorry, this path doesn't exist{' '}
               <span role="img" aria-label="emoji">
                 😞
               </span>
             </h1>
           </Fade>
           <Fade bottom duration={1000} delay={1000} distance="30px">
-            <p className="hero-cta justify-content-center">
-              <Link className="cta-btn cta-btn--hero" to="/">
-                Go back
-              </Link>
-            </p>
+            {/* <p className="hero-cta cta-btn-text justify-content-center"> */}
+            <Link className="cta-btn--hero" to="/">
+              <div className="cta-btn ">
+                <p className="cta-btn-text">go back</p>
+              </div>
+            </Link>
+            {/* </p> */}
           </Fade>
         </Container>
       </section>

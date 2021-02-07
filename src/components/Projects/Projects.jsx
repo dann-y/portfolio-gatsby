@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import ProjectVideo from '../Video/ProjectVideo';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -28,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, video } = project;
 
             return (
               <Row key={id}>
@@ -61,7 +62,8 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            {img && <ProjectImg alt={title} filename={img} />}
+                            {video && <ProjectVideo alt={title} filename={video} />}
                           </div>
                         </Tilt>
                       </a>
@@ -85,14 +87,26 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--resume"
-                        href={url || '#!'}
-                      >
-                        <p className="cta-btn-text">live version</p>
-                      </a>
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--resume"
+                          href={url || '#!'}
+                        >
+                          <p className="cta-btn-text">live version</p>
+                        </a>
+                      )}
+
+                      {!url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--resume"
+                        >
+                          <p className="cta-btn-text">in progress</p>
+                        </a>
+                      )}
 
                       {repo && (
                         <a

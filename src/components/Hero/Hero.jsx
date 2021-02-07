@@ -3,7 +3,6 @@ import { Container, Col, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import cube from '../../images/isometriccube.gif';
 
 //new code
 
@@ -38,7 +37,8 @@ const Header = () => {
                   {subtitle || "I'm the Unknown Developer."} */}
                 </h1>
                 <p className="hero-subtitle">
-                  I’m an LA-based full-stack web developer primarily focused on the front-end.
+                  {subtitle ||
+                    'I’m an LA-based software engineer focused on front-end web development.'}
                 </p>
               </Fade>
               <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

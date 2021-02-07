@@ -12,17 +12,17 @@ const Contact = () => {
     <section id="contact">
       <Container>
         <Title title="Contact" />
-        <Fade duration={1000} delay={800}>
+        <Fade duration={1000} delay={500}>
           <div className="contact-wrapper">
             {/* <p className="contact-wrapper__text">
               {cta || 'Would you like to work with me? Awesome!'}
             </p> */}
             {/* <p>{cta || 'Would you like to work with me? Awesome!'}</p> */}
             <p>
-              I’m currently looking for a full-time position as a software developer but I’m also
-              open to discussing freelance opportunities. <br />
+              I’m currently looking for a <b>full-time </b> position as a software developer but I’m
+              also open to discussing freelance opportunities. <br />
               <br />
-              Feel free to contact me using the form below!
+              Let's chat!
             </p>
             {/* <a
               target="_blank"
@@ -46,8 +46,8 @@ const Contact = () => {
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact v2" />
 
-          <Row>
-            <Col md={6}>
+          <Row md={8} className="justify-content-md-center">
+            <Col md={4}>
               <Form.Group className="form-group">
                 <Fade duration={1000} delay={1000}>
                   <Form.Label>name</Form.Label>
@@ -61,9 +61,9 @@ const Contact = () => {
                 </Fade>
               </Form.Group>
             </Col>
-            <Col md={6}>
+            <Col md={4}>
               <Form.Group className="form-group">
-                <Fade duration={1000} delay={1500}>
+                <Fade duration={1000} delay={1000}>
                   <Form.Label>e-mail</Form.Label>
                   <Form.Control
                     required
@@ -75,9 +75,11 @@ const Contact = () => {
                 </Fade>
               </Form.Group>
             </Col>
-            <Col>
-              <Form.Group className="form-group">
-                <Fade duration={1000} delay={2000}>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col md={8}>
+              <Form.Group className="form-group ">
+                <Fade duration={1000} delay={1000}>
                   <Form.Label>message</Form.Label>
                   <Form.Control
                     required
@@ -89,7 +91,7 @@ const Contact = () => {
                   />
                 </Fade>
               </Form.Group>
-              <Fade duration={1000} delay={2500}>
+              <Fade duration={1000} delay={1000}>
                 <Button className="cta-btn contact-btn" type="submit">
                   submit
                 </Button>

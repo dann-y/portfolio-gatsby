@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: 'Hi, my name is Danny.',
   // name: '',
-  // subtitle: '',
+  subtitle: '',
   cta: 'learn more',
   img: 'project.jpg',
 };
@@ -30,8 +30,19 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: '',
+    video: 'Untitled480.mp4',
+    title: 'cryptocurrency tracker',
+    info:
+      'A website built with React, React Hooks, and React Router which allows users to search for cryptocurrency data fetched from the CoinGecko API. The website was responsively designed using Tailwind CSS. Data of cryptocurrency prices vs. time was visualized using the Chart.js Javascript library.',
+    info2: '',
+    url: 'https://dann-y.github.io/crypto-viewer-react/', // if no url, will show in progress
+    repo: 'https://github.com/dann-y/crypto-viewer-react', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'project.jpg',
-    title: 'cryptocurrency viewer',
+    title: 'full stack e-commerce',
     info: '',
     info2: '',
     url: '',
@@ -39,22 +50,13 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'portfolio.png',
     title: `portfolio website (you're on it)`,
     info: '',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://danny-chu.com',
+    repo: 'https://github.com/dann-y/portfolio-gatsby', // if no repo, the button will not show up
   },
-  // {
-  //   id: nanoid(),
-  //   img: 'project.jpg',
-  //   title: '',
-  //   info: '',
-  //   info2: '',
-  //   url: '',
-  //   repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  // },
 ];
 
 // CONTACT DATA
