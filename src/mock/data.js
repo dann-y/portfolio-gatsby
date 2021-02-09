@@ -30,29 +30,32 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'ssense.png',
+    title: 'full stack e-commerce',
+    info:
+      'A full stack e-commerce website with full checkout functionality via Paypal, user authentication, product reviews/ratings, admin product and user management. Built using React, React Hooks, Redux, and React Bootstrap. Node.js and Express are used to serve and fetch product and user information from MongoDB database. UI is inspired by SSENSE.com (image is a placeholder via SSENSE).',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: '',
     video: 'Untitled480.mp4',
     title: 'cryptocurrency tracker',
     info:
-      'A website built with React, React Hooks, and React Router which allows users to search for cryptocurrency data fetched from the CoinGecko API. The website was responsively designed using Tailwind CSS. Data of cryptocurrency prices vs. time was visualized using the Chart.js Javascript library.',
+      'A website built with React, React Hooks, and React Router which allows users to search for cryptocurrency data fetched from the CoinGecko API. The website was responsively designed using Tailwind CSS. A watch list functionality was implemented using using Redux state management and local storage. Data of cryptocurrency prices vs. time was visualized using the Chart.js Javascript library.',
     info2: '',
     url: 'https://dann-y.github.io/crypto-viewer-react/', // if no url, will show in progress
     repo: 'https://github.com/dann-y/crypto-viewer-react', // if no repo, the button will not show up
   },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'full stack e-commerce',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
+
   {
     id: nanoid(),
     img: 'portfolio.png',
-    title: `portfolio website (you're on it)`,
-    info: '',
+    title: `portfolio website (you're on it!)`,
+    info:
+      'A simple and minimal personal portfolio designed with Figma and built using Gatsby.js, React, React Hooks, and GraphQL. The website was made responsive using React Bootstrap and styled using Sass.',
     info2: '',
     url: 'https://danny-chu.com',
     repo: 'https://github.com/dann-y/portfolio-gatsby', // if no repo, the button will not show up
