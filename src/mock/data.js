@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'danny chu', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: 'Danny Chu Personal Portfolio Website', // e.g: Welcome to my website
+  description: 'Danny Chu is a Software Engineer focused on front-end development', // e.g: Welcome to my website
 };
 
 // HERO DATA
@@ -20,20 +20,20 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'I recently graduated from UC Riverside with a B.S. Bioengineering degree in Spring 2020. Since graduating, I have been learning software engineering and have been thoroughly enjoying learning new technologies, CS concepts, frameworks, and UI/UX design patterns.',
+    'I recently graduated from UC Riverside with a B.S. Bioengineering degree in Spring 2020. In addition to engineering, I am particularly fond of visual design– most everything from graphic and industrial design to fashion design. Therefore, since graduating, I found web development to be an excellent balance of visual design thinking and logical problem solving. As a result, I’ve been pursuing software engineering as a career and have been enjoying learning new technologies, CS concepts, and UI/UX design patterns.',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1-oUpp1vbDguQmslE849GK4o7vQWoCPmM/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'ssense.png',
+    img: 'ecomm1.png',
     title: 'full stack e-commerce',
     info:
-      'A full stack e-commerce website with full checkout functionality via Paypal, user authentication, product reviews/ratings, admin product and user management. Built using React, React Hooks, Redux, and React Bootstrap. Node.js and Express are used to serve and fetch product and user information from MongoDB database. UI is inspired by SSENSE.com (image is a placeholder via SSENSE).',
+      'A full stack e-commerce website with full checkout functionality via Paypal, user authentication, product reviews/ratings, admin product and user management. Built using React, React Hooks, Redux, and React Bootstrap. Node.js and Express are used to serve and fetch product and user information from MongoDB database.',
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up
@@ -44,7 +44,7 @@ export const projectsData = [
     video: 'Untitled480.mp4',
     title: 'cryptocurrency tracker',
     info:
-      'A website built with React, React Hooks, and React Router which allows users to search for cryptocurrency data fetched from the CoinGecko API. The website was responsively designed using Tailwind CSS. A watch list functionality was implemented using using Redux state management and local storage. Data of cryptocurrency prices vs. time was visualized using the Chart.js Javascript library.',
+      'A website built with React, React Hooks, and React Router which allows users to search for cryptocurrency data fetched from the CoinGecko API. The website was responsively designed using Tailwind CSS. A watch list functionality was implemented using using Redux state management and local storage. Cryptocurrency price data was visualized using the Chart.js Javascript library.',
     info2: '',
     url: 'https://dann-y.github.io/crypto-viewer-react/', // if no url, will show in progress
     repo: 'https://github.com/dann-y/crypto-viewer-react', // if no repo, the button will not show up

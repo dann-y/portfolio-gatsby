@@ -74,7 +74,7 @@ const Technologies = () => {
                 <p>
                   git/github <br />
                   bootstrap <br />
-                  javascript(ES6+){' '}
+                  tailwindcss{' '}
                 </p>
               </Fade>
             </Col>
