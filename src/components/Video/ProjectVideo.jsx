@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
 const ProjectVideo = ({ filename, alt }) => (
-  <video className="embed-responsive" loop autoPlay muted>
+  <video className="embed-responsive" loop autoPlay muted playsInline>
     <source
       className="embed-responsive-item"
       src={require(`../../videos/${filename}`)}
