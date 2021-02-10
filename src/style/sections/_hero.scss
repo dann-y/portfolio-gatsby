@@ -18,28 +18,35 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  background-image: url('../images/isometriccube.gif');
-  background-repeat: no-repeat;
-  background-position: right 15% top 50%;
+  // background-image: url('../images/isometriccube.gif');
+  // background-repeat: no-repeat;
+  // background-position: right 15% top 50%;
   // background-size: cover;
 
-  @include respond(phone) {
-    padding: 0rem $default-font-size;
-    background-size: 70%;
-    background-position: right 50% bottom 10%;
+  // @include respond(phone) {
+  //   padding: 0rem $default-font-size;
+  //   background-size: 70%;
+  //   background-position: right 50% bottom 10%;
+  // }
+
+  .hero-video {
+    position: absolute;
+    z-index: 1;
   }
 
   .hero-text-div {
     margin: 0;
     position: absolute;
+    z-index: 2;
     top: 50%;
+
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
-    @include respond(phone) {
-      -ms-transform: translateY(-95%);
-      transform: translateY(-95%);
-    }
+    // @include respond(phone) {
+    //   -ms-transform: translateY(-75%);
+    //   transform: translateY(-75%);
+    // }
   }
 
   .hero-title {

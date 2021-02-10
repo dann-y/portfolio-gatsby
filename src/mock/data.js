@@ -14,6 +14,7 @@ export const heroData = {
   subtitle: '',
   cta: 'learn more',
   img: 'project.jpg',
+  video: 'isometriccube.mp4',
 };
 
 // ABOUT DATA

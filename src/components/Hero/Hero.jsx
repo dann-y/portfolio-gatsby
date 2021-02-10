@@ -3,12 +3,13 @@ import { Container, Col, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import ProjectVideo from '../Video/ProjectVideo';
 
 //new code
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta, img } = hero;
+  const { title, name, subtitle, cta, img, video } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <Row>
-          <Col lg={6} sm={12}>
+          <Col lg={6} md={6} sm={12}>
             <div className="hero-text-div">
               <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <h1 className="hero-title">
@@ -52,11 +53,13 @@ const Header = () => {
               </Fade>
             </div>
           </Col>
-          {/* <Col md={6} sm={12}>
+          <Col lg={6} md={6} sm={12}>
             <Fade duration={3000} delay={1500} distance="30px">
-              <img id="videoBG" src={cube} alt="isometric cube gif" />
+              <div className="video-div">
+                {video && <ProjectVideo className="hero-video" alt={title} filename={video} />}
+              </div>
             </Fade>
-          </Col> */}
+          </Col>
         </Row>
       </Container>
     </section>
