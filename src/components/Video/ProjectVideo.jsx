@@ -13,7 +13,7 @@ const ProjectVideo = ({ filename, alt }) => (
   <div
     dangerouslySetInnerHTML={{
       __html: `
-<video class="embed-responsive" loop autoPlay playsInline muted>
+<video class="embed-responsive" loop autoplay playsinline muted>
 <source
   class="embed-responsive-item"
   src=${require(`../../videos/${filename}`)}
