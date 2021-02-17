@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from './Header/Header';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Technologies from './Technologies/Technologies';
@@ -41,6 +42,7 @@ function App() {
   return (
     <PortfolioProvider value={{ nav, hero, about, technologies, projects, contact, footer }}>
       {/* <Navigationbar /> */}
+      <Header />
       <Hero />
       <About />
       <Technologies />

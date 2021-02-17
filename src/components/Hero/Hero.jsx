@@ -7,7 +7,7 @@ import ProjectVideo from '../Video/ProjectVideo';
 
 //new code
 
-const Header = () => {
+const Hero = () => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle, cta, img, video } = hero;
 
@@ -66,4 +66,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;
