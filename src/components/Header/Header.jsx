@@ -26,11 +26,7 @@ export default function Header() {
               </li>
               <li>
                 <u>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://drive.google.com/file/d/1-oUpp1vbDguQmslE849GK4o7vQWoCPmM/view?usp=sharing"
-                  >
+                  <a target="_blank" rel="noopener noreferrer" href="./Daniel-Chu-Resume.pdf">
                     resume
                   </a>
                 </u>

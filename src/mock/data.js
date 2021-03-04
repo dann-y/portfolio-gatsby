@@ -24,7 +24,7 @@ export const aboutData = {
     'I recently graduated from UC Riverside with a B.S. Bioengineering degree in Spring 2020. In addition to engineering, I am particularly fond of visual design– most everything from graphic and industrial design to fashion design. Therefore, since graduating, I found web development to be an excellent balance of visual design thinking and logical problem solving. As a result, I’ve been pursuing software engineering as a career and have been enjoying learning new technologies, CS concepts, and UI/UX design patterns.',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://drive.google.com/file/d/1-oUpp1vbDguQmslE849GK4o7vQWoCPmM/view?usp=sharing', // if no resume, the button will not show up
+  resume: './Daniel-Chu-Resume.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
