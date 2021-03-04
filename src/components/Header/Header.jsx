@@ -26,7 +26,7 @@ export default function Header() {
               </li>
               <li>
                 <u>
-                  <a target="_blank" rel="noopener noreferrer" href="./Daniel-Chu-Resume.pdf">
+                  <a target="_blank" rel="noopener noreferrer" href="Daniel-Chu-Resume.pdf">
                     resume
                   </a>
                 </u>
