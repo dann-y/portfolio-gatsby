@@ -15,6 +15,7 @@
   }
 
   .about-wrapper {
+    margin-top: -2rem;
     @include respond(phone) {
       padding-bottom: 5rem;
     }

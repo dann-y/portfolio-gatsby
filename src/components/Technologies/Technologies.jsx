@@ -57,6 +57,19 @@ const Technologies = () => {
               </Fade>
             </Col>
             <Col lg={2} md={3} sm={6} xs={6}>
+              <Fade up={isDesktop} duration={1000} delay={1500}>
+                {' '}
+                <h3 className="list-label">tools</h3>
+                <p>
+                  git/github <br />
+                  bootstrap <br />
+                  tailwindcss <br />
+                  sass <br />
+                  heroku & netlify
+                </p>
+              </Fade>
+            </Col>
+            <Col lg={2} md={3} sm={6} xs={6}>
               <Fade up={isDesktop} duration={1000} delay={1400}>
                 {' '}
                 <h3 className="list-label">design</h3>
@@ -64,17 +77,6 @@ const Technologies = () => {
                   figma <br />
                   sketch <br />
                   adobe suite{' '}
-                </p>
-              </Fade>
-            </Col>
-            <Col lg={2} md={3} sm={6} xs={6}>
-              <Fade up={isDesktop} duration={1000} delay={1500}>
-                {' '}
-                <h3 className="list-label">others</h3>
-                <p>
-                  git/github <br />
-                  bootstrap <br />
-                  tailwindcss{' '}
                 </p>
               </Fade>
             </Col>

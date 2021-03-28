@@ -51,7 +51,7 @@ const About = () => {
                 </p> */}
               <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={1300} distance="30px">
                 {resume && (
-                  <span className="flex mt-3">
+                  <span className="flex mt-4">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"

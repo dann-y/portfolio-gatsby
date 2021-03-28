@@ -85,7 +85,9 @@ const Projects = () => {
                           {info ||
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <h4 className="mb-4">
+                          <strong>{info2 || ''}</strong>
+                        </h4>
                       </div>
                       {url && (
                         <a

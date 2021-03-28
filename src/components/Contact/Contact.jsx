@@ -19,10 +19,9 @@ const Contact = () => {
             </p> */}
             {/* <p>{cta || 'Would you like to work with me? Awesome!'}</p> */}
             <p>
-              I’m currently looking for a <b>full-time </b> position as a software engineer but I’m
-              also open to discussing freelance opportunities. <br />
+              I’m currently looking for a <b>full-time </b> position as a software engineer. <br />{' '}
               <br />
-              Let's chat!
+              Feel free to contact me if you're interested in working together, or just say hi!
             </p>
             {/* <a
               target="_blank"
