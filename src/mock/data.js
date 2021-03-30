@@ -4,7 +4,8 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'danny chu', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: 'Danny Chu is a Software Engineer focused on Front-End development.', // e.g: Welcome to my website
+  description: 'Danny Chu is a Full-Stack Web Developer / Software Engineer.', // e.g: Welcome to my website
+  image: 'portfolio.png',
 };
 
 // HERO DATA
