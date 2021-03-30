@@ -15,6 +15,7 @@ export default () => {
         <title>{title || 'danny chu'}</title>
         <html lang={lang || 'en'} />
         <meta name="description" content={description || 'danny chu software developer'} />
+        <meta name="image" content={image} />
         {image && <meta property="og:image" content={image} />}
       </Helmet>
       <App />

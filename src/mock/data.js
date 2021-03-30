@@ -5,7 +5,8 @@ export const headData = {
   title: 'danny chu', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: 'Danny Chu is a Full-Stack Web Developer / Software Engineer.', // e.g: Welcome to my website
-  image: 'portfolio.png',
+  image: 'https://www.danny-chu.com/portfolio.png',
+  url: 'https://www.danny-chu.com/',
 };
 
 // HERO DATA
