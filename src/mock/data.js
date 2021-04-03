@@ -23,7 +23,7 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'I recently graduated from UC Riverside with a B.S. Bioengineering degree in Spring 2020. In addition to engineering, I am particularly fond of visual design– most everything from graphic and industrial design to fashion design. Post-graduation, I found that web development involves a satisfying combination of both visual design thinking and logical problem solving. As a result, I have been pursuing software engineering as a career and have been enjoying learning new technologies, CS concepts, and UI/UX design patterns.',
+    'I recently graduated from UC Riverside with a B.S. Bioengineering degree in Spring 2020. In addition to engineering, I am particularly fond of visual design– most everything from graphic and industrial design to fashion design. Post-graduation, I found that web development involves a combination of both visual design thinking and logical problem solving. As a result, I have been pursuing software engineering as a career and have been enjoying learning new technologies, CS concepts, and UI/UX design patterns.',
   paragraphTwo: '',
   paragraphThree: '',
   resume: 'Daniel-Chu-Resume.pdf', // if no resume, the button will not show up
@@ -33,10 +33,11 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'ecomm1.png',
+    img: '',
+    video: 'mern_example.mp4',
     title: 'full stack e-commerce',
     info:
-      'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, React Hooks, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
+      'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
     info2: `Note: This project may take a few seconds to load since the backend server is shut off after a period of inactivity.`,
     url: 'https://techcenterapp.herokuapp.com/',
     repo: 'https://github.com/dann-y/mern-ecomm', // if no repo, the button will not show up
@@ -44,7 +45,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: '',
-    video: 'Untitled480.mp4',
+    video: 'Crypto_Vid.mp4',
     title: 'cryptocurrency tracker',
     info:
       'A website built and designed with React, React Hooks, React Router, and TailwindCSS which allows users to search for cryptocurrency data fetched from the CoinGecko API. A watch list functionality was implemented using using Redux state management and local storage. Cryptocurrency price data was visualized using the Chart.js Javascript library.',
