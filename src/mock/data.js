@@ -13,18 +13,20 @@ export const headData = {
 export const heroData = {
   title: 'Hi, my name is Danny.',
   // name: '',
-  subtitle: '',
-  cta: 'learn more',
+  subtitle: `I'm an LA-based web developer and designer. I primarily work with Javascript, React, Node, Express.js, and MongoDB for full-stack web development. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. Check out my work below and don't hesitate to reach out if anything catches your eye.`,
+  mobileSubtitle: `I'm an LA-based web developer working with the MERN stack. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design.`,
+  cta: 'view projects',
   img: 'project.jpg',
   video: 'isometriccube.mp4',
+  resume: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne:
+  paragraphOne: `Hey there! I'm a recent Engineering graduate pursuing web development. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. I primarily work with Javascript, React, Node, Express.js, and MongoDB for full-stack web development. Check out my work below and don't hesitate to reach out if anything catches your eye.`,
+  paragraphTwo:
     'I recently graduated from UC Riverside with a B.S. Bioengineering degree in Spring 2020. In addition to engineering, I am particularly fond of visual design– most everything from graphic and industrial design to fashion design. Post-graduation, I found that web development involves a nice combination of both visual design thinking and logical problem solving. As a result, I have been pursuing software engineering as a career and have been enjoying learning new technologies, CS concepts, and UI/UX design patterns.',
-  paragraphTwo: '',
   paragraphThree: '',
   resume: 'Daniel-Chu-Resume.pdf', // if no resume, the button will not show up
 };
@@ -33,9 +35,22 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'black.png',
+    video: '',
+    title: 'noti-fire, 2021',
+    technologies: 'React.js, Redux, Express.js, MongoDB, Node.js, Tailwind CSS',
+    info:
+      'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: '',
     video: 'mern_example.mp4',
-    title: 'full stack e-commerce',
+    title: 'tech center, 2021',
+    technologies: 'React.js, Redux, Express.js, MongoDB, Node.js, Bootstrap',
     info:
       'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
     info2: '',
@@ -46,7 +61,8 @@ export const projectsData = [
     id: nanoid(),
     img: '',
     video: 'Crypto_Vid.mp4',
-    title: 'cryptocurrency tracker',
+    title: 'cryptocurrency tracker, 2021',
+    technologies: 'React.js, Redux, Tailwind CSS',
     info:
       'A website built and designed with React, React Hooks, React Router, and TailwindCSS which allows users to search for cryptocurrency data fetched from the CoinGecko API. A watch list functionality was implemented using using Redux state management and local storage. Cryptocurrency price data was visualized using the Chart.js Javascript library.',
     info2: '',
@@ -57,9 +73,10 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'portfolio.png',
-    title: `portfolio website (you're on it!)`,
+    title: `portfolio website, 2021`,
+    technologies: 'React.js, Gatsby.js, GraphQL',
     info:
-      'A simple and minimal personal portfolio designed with Figma and built using Gatsby.js, React, React Hooks, and GraphQL. The website was made responsive using React Bootstrap and styled using Sass.',
+      'A minimal personal portfolio designed with Figma and built using Gatsby.js, React, React Hooks, and GraphQL. The website was made responsive using React Bootstrap and styled using Sass.',
     info2: '',
     url: 'https://danny-chu.com',
     repo: 'https://github.com/dann-y/portfolio-gatsby', // if no repo, the button will not show up

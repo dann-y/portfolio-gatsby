@@ -44,9 +44,9 @@ function App() {
       {/* <Navigationbar /> */}
       <Header />
       <Hero />
-      <About />
-      <Technologies />
+      {/* <About /> */}
       <Projects />
+      {/* <Technologies /> */}
       <Contact />
       <Footer />
     </PortfolioProvider>

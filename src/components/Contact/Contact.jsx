@@ -19,7 +19,8 @@ const Contact = () => {
             </p> */}
             {/* <p>{cta || 'Would you like to work with me? Awesome!'}</p> */}
             <p>
-              I’m currently looking for a <b>full-time </b> position as a software engineer. <br />{' '}
+              I’m currently looking for a <b>full-time </b> position as a software engineer. You can
+              view my resume <a href="Daniel-Chu-Resume.pdf">here</a>. <br />
               <br />
               Feel free to contact me if you're interested in working together, or just say hi!
             </p>
@@ -63,7 +64,7 @@ const Contact = () => {
             <Col md={4}>
               <Form.Group className="form-group">
                 <Fade duration={1000} delay={1000}>
-                  <Form.Label>e-mail</Form.Label>
+                  <Form.Label>email</Form.Label>
                   <Form.Control
                     required
                     className="input-field"

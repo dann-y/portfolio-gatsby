@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id, video } = project;
+            const { title, technologies, info, info2, url, repo, img, id, video } = project;
 
             return (
               <Row key={id}>
@@ -80,6 +80,8 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+
+                      {technologies && <h3 className="mb-4">{technologies}</h3>}
                       <div>
                         <p>
                           {info ||
@@ -93,7 +95,7 @@ const Projects = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn cta-btn--resume"
+                          className="cta-btn cta-btn--demo"
                           href={url || '#!'}
                         >
                           <p className="cta-btn-text">live version</p>
@@ -104,7 +106,7 @@ const Projects = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn cta-btn--resume"
+                          className="cta-btn cta-btn--demo"
                         >
                           <p className="cta-btn-text">in progress</p>
                         </a>

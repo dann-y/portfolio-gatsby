@@ -9,7 +9,7 @@ import ProjectVideo from '../Video/ProjectVideo';
 
 const Hero = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta, img, video } = hero;
+  const { title, name, subtitle, mobileSubtitle, cta, img, video, resume } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -37,23 +37,38 @@ const Hero = () => {
                   {/* <br />
                   {subtitle || "I'm the Unknown Developer."} */}
                 </h1>
-                <p className="hero-subtitle">
-                  {subtitle ||
-                    'I’m an LA-based software engineer focused on front-end web development.'}
-                </p>
+
+                <p className="hero-subtitle">{subtitle}</p>
               </Fade>
               <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
                 <div className="hero-cta">
-                  <Link to="about" smooth duration={1100}>
+                  <Link to="projects" smooth duration={1100}>
                     <div className="cta-btn ">
                       <p className="cta-btn-text">{cta || 'learn more'}</p>
                     </div>
+                    {resume && (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--resume"
+                        href={resume}
+                      >
+                        <p className="cta-btn-text">resume</p>
+                      </a>
+                    )}
                   </Link>
                 </div>
               </Fade>
+              <Fade
+                up={isDesktop}
+                bottom={isMobile}
+                duration={1000}
+                delay={1300}
+                distance="30px"
+              ></Fade>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={6} xs={4}>
             <Fade duration={3000} delay={1500} distance="30px">
               <div className="video-div">
                 {video && <ProjectVideo className="hero-video" alt={title} filename={video} />}

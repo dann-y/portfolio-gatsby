@@ -10,7 +10,7 @@ export default function Header() {
           <nav>
             <ul>
               <li>
-                <Link to="about" smooth duration={1100}>
+                <Link to="hero" smooth duration={1100}>
                   <p>about</p>
                 </Link>
               </li>
