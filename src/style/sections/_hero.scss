@@ -43,10 +43,10 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
-    @include respond(phone) {
-      -ms-transform: translateY(-20%);
-      transform: translateY(-20%);
-    }
+    // @include respond(phone) {
+    //   -ms-transform: translateY(-10%);
+    //   transform: translateY(-10%);
+    // }
   }
 
   .hero-title {

@@ -33,18 +33,18 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [
-  {
-    id: nanoid(),
-    img: 'black.png',
-    video: '',
-    title: 'noti-fire, 2021',
-    technologies: 'React.js, Redux, Express.js, MongoDB, Node.js, Tailwind CSS',
-    info:
-      'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-  },
+  // {
+  //   id: nanoid(),
+  //   img: 'black.png',
+  //   video: '',
+  //   title: 'noti-fire, 2021',
+  //   technologies: 'React.js, Redux, Express.js, MongoDB, Node.js, Tailwind CSS',
+  //   info:
+  //     'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
+  //   info2: '',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  // },
   {
     id: nanoid(),
     img: '',
