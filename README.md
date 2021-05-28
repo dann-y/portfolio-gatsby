@@ -1,4 +1,4 @@
-I wanted to create a one-pager portfolio similar in structure to Jacobo's Simplefolio (https://github.com/cobidev) but I added a few sections, images, animations, and a new color scheme to make the portfolio more personal!
+I wanted to create a one-pager portfolio similar in structure to Jacobo's Simplefolio (https://github.com/cobidev) but I added a few sections, images, animations, and a new color scheme to make the portfolio more personal.
 
 ## Technologies used
 

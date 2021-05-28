@@ -60,7 +60,7 @@
     }
     @include respond(tab-port) {
       font-size: 3rem;
-      text-align: center;
+      text-align: left;
     }
     @include respond(phone) {
       font-size: 3rem;
@@ -82,7 +82,7 @@
     }
     @include respond(tab-port) {
       font-size: 1.5rem;
-      text-align: center;
+      text-align: left;
     }
     @include respond(phone) {
       font-size: 1.6rem;
@@ -97,7 +97,7 @@
     display: flex;
 
     @include respond(tab-port) {
-      justify-content: center;
+      justify-content: left;
     }
 
     // & a {
