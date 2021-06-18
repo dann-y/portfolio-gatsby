@@ -74,9 +74,9 @@ export const projectsData = [
     id: nanoid(),
     img: 'portfolio.png',
     title: `portfolio website, 2021`,
-    technologies: 'React.js, Gatsby.js, GraphQL',
+    technologies: 'Gatsby.js, React.js, Bootstrap, Sass',
     info:
-      'A minimal personal portfolio designed with Figma and built using Gatsby.js, React, React Hooks, and GraphQL. The website was made responsive using React Bootstrap and styled using Sass.',
+      'A minimal personal portfolio designed with Figma and built using Gatsby.js and React. The website was made responsive using React Bootstrap and styled using Sass.',
     info2: '',
     url: 'https://danny-chu.com',
     repo: 'https://github.com/dann-y/portfolio-gatsby', // if no repo, the button will not show up

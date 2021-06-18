@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
         </Fade>
       </Container>
-      <Container className="form-container">
+      <Container className="form-container text-center">
         <Form
           name="contact v2"
           method="POST"
