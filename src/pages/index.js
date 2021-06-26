@@ -10,7 +10,7 @@ export default () => {
 
   return (
     <>
-      {/* <Helmet>
+     <Helmet>
         <meta charSet="utf-8" />
         <title>{title || 'danny chu'}</title>
         <html lang={lang || 'en'} />
@@ -19,7 +19,7 @@ export default () => {
         {title && <meta property="og:title" content={title} />}
         {description && <meta property="og:description" content={description} />}
         {image && <meta property="og:image" content={image} />}
-      </Helmet> */}
+      </Helmet>
       <App />
     </>
   );
