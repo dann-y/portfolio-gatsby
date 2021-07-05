@@ -108,7 +108,7 @@ const Projects = () => {
                           rel="noopener noreferrer"
                           className="cta-btn cta-btn--demo"
                         >
-                          <p className="cta-btn-text">in progress</p>
+                          <p className="cta-btn-text">coming soon</p>
                         </a>
                       )}
 

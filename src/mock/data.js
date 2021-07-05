@@ -13,7 +13,7 @@ export const headData = {
 export const heroData = {
   title: 'Hi, my name is Danny.',
   // name: '',
-  subtitle: `I'm an LA-based web developer and designer. I primarily work with Javascript, React, Node, Express.js, and MongoDB for full-stack web development. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. Check out my work below and don't hesitate to reach out if anything catches your eye.`,
+  subtitle: `I'm an LA-based web developer and designer. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. Check out my work below and feel free to reach out if anything catches your eye.`,
   mobileSubtitle: `I'm an LA-based web developer working with the MERN stack. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design.`,
   cta: 'view projects',
   img: 'project.jpg',
@@ -33,18 +33,18 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [
-  // {
-  //   id: nanoid(),
-  //   img: 'black.png',
-  //   video: '',
-  //   title: 'noti-fire, 2021',
-  //   technologies: 'React.js, Redux, Express.js, MongoDB, Node.js, Tailwind CSS',
-  //   info:
-  //     'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
-  //   info2: '',
-  //   url: '',
-  //   repo: '', // if no repo, the button will not show up
-  // },
+  //  {
+  //    id: nanoid(),
+  //    img: '',
+  //    video: 'notifire_video.mp4',
+  //    title: 'noti-fire, 2021',
+  //    technologies: 'React.js, Redux, Express.js, MongoDB, Node.js, Tailwind CSS',
+  //    info:
+  //      'A full stack web application which notifies users when new listings from online marketplaces such as eBay and Grailed are uploaded. Features include a user dashboard, new listing feed, discord notifications, and search query management.',
+  //    info2: '',
+  //    url: '',
+  //    repo: '', // if no repo, the button will not show up
+  //  },
   {
     id: nanoid(),
     img: '',
@@ -64,7 +64,7 @@ export const projectsData = [
     title: 'cryptocurrency tracker, 2021',
     technologies: 'React.js, Redux, Tailwind CSS',
     info:
-      'A website built and designed with React, React Hooks, React Router, and TailwindCSS which allows users to search for cryptocurrency data fetched from the CoinGecko API. A watch list functionality was implemented using using Redux state management and local storage. Cryptocurrency price data was visualized using the Chart.js Javascript library.',
+      'A website built and designed with React, React Hooks, React Router, Redux, and Tailwind CSS which allows users to search for data from 100+ cryptocurrencies fetched from the CoinGecko API. Cryptocurrency price data was visualized using the Chart.js Javascript library.',
     info2: '',
     url: 'https://dann-y.github.io/crypto-viewer-react/', // if no url, will show in progress
     repo: 'https://github.com/dann-y/crypto-viewer-react', // if no repo, the button will not show up
