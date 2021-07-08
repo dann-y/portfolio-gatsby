@@ -35,32 +35,20 @@ header {
         li {
           list-style: none;
           margin: 0 45px;
-          &.btn {
-            a {
-              color: #fff;
-              font-weight: 600;
-              background: #23232a;
-              padding: 16px 24px;
-              border-radius: 10px;
-            }
-          }
+          padding: 2px 5px;
           p {
-            text-decoration: none;
             color: #fff;
-            cursor: pointer;
-            transition: color 0.5s;
-
+            transition: all 3s;
             &:hover {
-              color: rgb(95, 95, 95);
+              text-decoration: underline;
             }
           }
           a {
-            text-decoration: none;
             color: #fff;
             transition: color 0.5s;
-
+            text-decoration: underline;
             &:hover {
-              color: rgb(95, 95, 95);
+              color: rgb(179, 179, 179);
             }
           }
         }

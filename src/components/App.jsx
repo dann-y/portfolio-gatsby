@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Header from './Header/Header';
 import Hero from './Hero/Hero';
 import About from './About/About';
@@ -10,6 +10,7 @@ import CustomCursor from './CustomCursor/CustomCursor';
 import Navigationbar from './Navigationbar/Navigationbar';
 
 import { PortfolioProvider } from '../context/context';
+import { MouseContext } from '../context/mouse-context';
 
 import {
   navData,
@@ -22,6 +23,8 @@ import {
 } from '../mock/data';
 
 function App() {
+  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+
   const [nav, setNav] = useState({});
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
@@ -43,14 +46,29 @@ function App() {
   return (
     <PortfolioProvider value={{ nav, hero, about, technologies, projects, contact, footer }}>
       {/* <Navigationbar /> */}
-      <CustomCursor/>
-      <Header />
-      <Hero />
+      <CustomCursor />
+      <Header
+        onMouseEnter={() => cursorChangeHandler('hovered')}
+        onMouseLeave={() => cursorChangeHandler('')}
+      />
+      <Hero
+        onMouseEnter={() => cursorChangeHandler('hovered')}
+        onMouseLeave={() => cursorChangeHandler('')}
+      />
       {/* <About /> */}
-      <Projects />
+      <Projects
+        onMouseEnter={() => cursorChangeHandler('hovered')}
+        onMouseLeave={() => cursorChangeHandler('')}
+      />
       {/* <Technologies /> */}
-      <Contact />
-      <Footer />
+      <Contact
+        onMouseEnter={() => cursorChangeHandler('hovered')}
+        onMouseLeave={() => cursorChangeHandler('')}
+      />
+      <Footer
+        onMouseEnter={() => cursorChangeHandler('hovered')}
+        onMouseLeave={() => cursorChangeHandler('')}
+      />
     </PortfolioProvider>
   );
 }

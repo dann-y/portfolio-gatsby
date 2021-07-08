@@ -7,7 +7,7 @@ import ProjectVideo from '../Video/ProjectVideo';
 
 //new code
 
-const Hero = () => {
+const Hero = ({ onMouseEnter, onMouseLeave }) => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle, mobileSubtitle, cta, img, video, resume } = hero;
 
@@ -37,13 +37,18 @@ const Hero = () => {
                   {/* <br />
                   {subtitle || "I'm the Unknown Developer."} */}
                 </h1>
-
+              </Fade>
+              <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={750} distance="30px">
                 <p className="hero-subtitle">{subtitle}</p>
               </Fade>
               <Fade up={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
                 <div className="hero-cta">
                   <Link to="projects" smooth duration={1100}>
-                    <div className="cta-btn ">
+                    <div
+                      onMouseEnter={onMouseEnter}
+                      onMouseLeave={onMouseLeave}
+                      className="cta-btn "
+                    >
                       <p className="cta-btn-text">{cta || 'learn more'}</p>
                     </div>
                     {resume && (
@@ -59,13 +64,6 @@ const Hero = () => {
                   </Link>
                 </div>
               </Fade>
-              <Fade
-                up={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={1300}
-                distance="30px"
-              ></Fade>
             </div>
           </Col>
           <Col lg={6} md={6} xs={4}>

@@ -4,7 +4,7 @@ import { Container, Col, Row, Form, Button } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
-const Contact = () => {
+const Contact = ({ onMouseEnter, onMouseLeave }) => {
   const { contact } = useContext(PortfolioContext);
   const { cta, btn, email } = contact;
 
@@ -14,28 +14,21 @@ const Contact = () => {
         <Title title="Contact" />
         <Fade duration={1000} delay={500}>
           <div className="contact-wrapper">
-            {/* <p className="contact-wrapper__text">
-              {cta || 'Would you like to work with me? Awesome!'}
-            </p> */}
-            {/* <p>{cta || 'Would you like to work with me? Awesome!'}</p> */}
             <p>
               I’m currently looking for a <b>full-time </b> position as a software engineer. You can
               view my resume{' '}
-              <a href="Daniel-Chu-Resume.pdf" target="_blank">
+              <a
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                href="Daniel-Chu-Resume.pdf"
+                target="_blank"
+              >
                 here
               </a>
               . <br />
               <br />
               Feel free to contact me if you're interested in working together, or just say hi!
             </p>
-            {/* <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
-            >
-              {btn || "Let's Talk"}
-            </a> */}
           </div>
         </Fade>
       </Container>
@@ -96,9 +89,14 @@ const Contact = () => {
                 </Fade>
               </Form.Group>
               <Fade duration={1000} delay={1000}>
-                <Button className="cta-btn contact-btn" type="submit">
+                <button
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
+                  className="cta-btn contact-btn"
+                  type="submit"
+                >
                   submit
-                </Button>
+                </button>
               </Fade>
             </Col>
           </Row>

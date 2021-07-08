@@ -7,7 +7,7 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 import ProjectVideo from '../Video/ProjectVideo';
 
-const Projects = () => {
+const Projects = ({ onMouseEnter, onMouseLeave }) => {
   const { projects } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
@@ -93,6 +93,8 @@ const Projects = () => {
                       </div>
                       {url && (
                         <a
+                          onMouseEnter={onMouseEnter}
+                          onMouseLeave={onMouseLeave}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="cta-btn cta-btn--demo"
@@ -114,6 +116,8 @@ const Projects = () => {
 
                       {repo && (
                         <a
+                          onMouseEnter={onMouseEnter}
+                          onMouseLeave={onMouseLeave}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="cta-btn cta-btn--repo"

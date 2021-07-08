@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { headData } from '../mock/data';
+import MouseContextProvider from "../context/mouse-context";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
@@ -20,7 +21,9 @@ export default () => {
         {description && <meta property="og:description" content={description} />}
         {image && <meta property="og:image" content={image} />}
       </Helmet>
+      <MouseContextProvider>
       <App />
+      </MouseContextProvider>
     </>
   );
 };
