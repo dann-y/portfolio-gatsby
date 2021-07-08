@@ -6,6 +6,7 @@ import Technologies from './Technologies/Technologies';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import CustomCursor from './CustomCursor/CustomCursor';
 import Navigationbar from './Navigationbar/Navigationbar';
 
 import { PortfolioProvider } from '../context/context';
@@ -42,6 +43,7 @@ function App() {
   return (
     <PortfolioProvider value={{ nav, hero, about, technologies, projects, contact, footer }}>
       {/* <Navigationbar /> */}
+      <CustomCursor/>
       <Header />
       <Hero />
       {/* <About /> */}
