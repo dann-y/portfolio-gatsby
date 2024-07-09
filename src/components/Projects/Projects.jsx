@@ -120,7 +120,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                           onMouseLeave={onMouseLeave}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn cta-btn--repo"
+                          className={`cta-btn ${url ? 'cta-btn--repo' : 'cta-btn--demo'}`}
                           href={repo}
                         >
                           <p className="cta-btn-text">github repo</p>
