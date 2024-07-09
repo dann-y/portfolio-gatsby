@@ -104,7 +104,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                         </a>
                       )}
 
-                      {!url && (
+                      {/* {!url && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
@@ -112,7 +112,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                         >
                           <p className="cta-btn-text">coming soon</p>
                         </a>
-                      )}
+                      )} */}
 
                       {repo && (
                         <a

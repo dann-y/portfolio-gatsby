@@ -13,7 +13,7 @@ export const headData = {
 export const heroData = {
   title: 'Hi, my name is Danny.',
   // name: '',
-  subtitle: `I'm an NYC-based web developer and designer. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. Check out my work below and feel free to reach out if anything catches your eye.`,
+  subtitle: `I'm a web developer and designer currently based in NYC. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. Check out my work below and feel free to reach out if anything catches your eye.`,
   mobileSubtitle: `I'm an NYC-based web developer working with the MERN stack. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design.`,
   cta: 'view projects',
   img: 'project.jpg',
@@ -51,10 +51,9 @@ export const projectsData = [
     video: 'mern_example.mp4',
     title: 'tech center, 2021',
     technologies: 'React.js, Redux, Express.js, MongoDB, Node.js, Bootstrap',
-    info:
-      'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
+    info: 'A full stack e-commerce website with full checkout functionality via Paypal, form validation, user registration & authentication, and admin product & user management. Built using React, Redux, and React Bootstrap. Node.js and Express were used to access and update product & user information from a MongoDB database.',
     info2: '',
-    url: 'https://techcenterapp.herokuapp.com/',
+    // url: 'https://techcenterapp.herokuapp.com/',
     repo: 'https://github.com/dann-y/mern-ecomm', // if no repo, the button will not show up
   },
   {
@@ -63,8 +62,7 @@ export const projectsData = [
     video: 'Crypto_Vid.mp4',
     title: 'cryptocurrency tracker, 2021',
     technologies: 'React.js, Redux, Tailwind CSS',
-    info:
-      'A website built and designed with React, React Hooks, React Router, Redux, and Tailwind CSS which allows users to search for data from 100+ cryptocurrencies fetched from the CoinGecko API. Cryptocurrency price data was visualized using the Chart.js Javascript library.',
+    info: 'A website built and designed with React, React Hooks, React Router, Redux, and Tailwind CSS which allows users to search for data from 100+ cryptocurrencies fetched from the CoinGecko API. Cryptocurrency price data was visualized using the Chart.js Javascript library.',
     info2: '',
     url: 'https://dann-y.github.io/crypto-viewer-react/', // if no url, will show in progress
     repo: 'https://github.com/dann-y/crypto-viewer-react', // if no repo, the button will not show up
@@ -75,8 +73,7 @@ export const projectsData = [
     img: 'portfolio.png',
     title: `portfolio website, 2021`,
     technologies: 'Gatsby.js, React.js, Bootstrap, Sass',
-    info:
-      'A minimal personal portfolio designed with Figma and built using Gatsby.js and React. The website was made responsive using React Bootstrap and styled using Sass.',
+    info: 'A minimal personal portfolio designed with Figma and built using Gatsby.js and React. The website was made responsive using React Bootstrap and styled using Sass.',
     info2: '',
     url: 'https://danny-chu.com',
     repo: 'https://github.com/dann-y/portfolio-gatsby', // if no repo, the button will not show up
