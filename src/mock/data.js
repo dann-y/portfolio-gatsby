@@ -13,8 +13,8 @@ export const headData = {
 export const heroData = {
   title: 'Hi, my name is Danny.',
   // name: '',
-  subtitle: `I'm an LA-based web developer and designer. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. Check out my work below and feel free to reach out if anything catches your eye.`,
-  mobileSubtitle: `I'm an LA-based web developer working with the MERN stack. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design.`,
+  subtitle: `I'm an NYC-based web developer and designer. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. Check out my work below and feel free to reach out if anything catches your eye.`,
+  mobileSubtitle: `I'm an NYC-based web developer working with the MERN stack. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design.`,
   cta: 'view projects',
   img: 'project.jpg',
   video: 'isometriccube.mp4',
