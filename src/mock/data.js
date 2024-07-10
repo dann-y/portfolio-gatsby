@@ -13,7 +13,7 @@ export const headData = {
 export const heroData = {
   title: 'Hi, my name is Danny.',
   // name: '',
-  subtitle: `I'm a web developer and designer currently based in NYC. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. Check out my work below and feel free to reach out if anything catches your eye.`,
+  subtitle: `I'm a web developer and designer currently based in NYC. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design. You can check out some of my work below.`,
   mobileSubtitle: `I'm an NYC-based web developer working with the MERN stack. I enjoy problem solving and am a fan of design- most everything from graphic to industrial and fashion design.`,
   cta: 'view projects',
   img: 'project.jpg',

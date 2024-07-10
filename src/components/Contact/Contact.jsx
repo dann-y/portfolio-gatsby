@@ -15,7 +15,7 @@ const Contact = ({ onMouseEnter, onMouseLeave }) => {
         <Fade duration={1000} delay={500}>
           <div className="contact-wrapper">
             <p>
-              I’m currently looking for a <b>full-time </b> position as a software engineer. You can
+              {/* I’m currently looking for a <b>full-time </b> position as a software engineer. You can
               view my resume{' '}
               <a
                 onMouseEnter={onMouseEnter}
@@ -26,7 +26,7 @@ const Contact = ({ onMouseEnter, onMouseLeave }) => {
                 here
               </a>
               . <br />
-              <br />
+              <br /> */}
               Feel free to contact me if you're interested in working together, or just say hi!
             </p>
           </div>

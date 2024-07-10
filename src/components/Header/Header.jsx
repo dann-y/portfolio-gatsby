@@ -39,10 +39,15 @@ export default function Header({ onMouseEnter, onMouseLeave }) {
                   </Link>
                 </li>
                 <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                  <a target="_blank" href="https://www.linkedin.com/in/danny-chu/">
+                    <p>linkedin</p>
+                  </a>
+                </li>
+                {/* <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                   <a target="_blank" href="Daniel-Chu-Resume.pdf">
                     <p>resume</p>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
