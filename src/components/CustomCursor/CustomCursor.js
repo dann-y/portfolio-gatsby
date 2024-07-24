@@ -21,8 +21,18 @@ function useMousePosition() {
 
 const CustomCursor = () => {
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
-
   const { x, y } = useMousePosition();
+
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  if (width < 768) return null;
+
   return (
     <>
       {/* 2. */}
